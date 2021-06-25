@@ -1,20 +1,19 @@
-this.addEventListener("DOMContentLoaded", () =>{
-  const questions = document.querySelectorAll(".question")
-  questions.forEach((question) => question.addEventListener("click", () =>{
+// this.addEventListener("DOMContentLoaded", () => {
+//         const questions = document.querySelectorAll(".question")
+//         questions.forEach((question) => question.addEventListener("click", () => {
 
-      if(question.parentNode.classList.contains("active")){
-          question.parentNode.classList.toggle("active")
-      }
-  else{
-  questions.forEach(question => question.parentNode.classList.remove("active"))
-  question.parentNode.classList.add("active")
-      }
+//             if (question.parentNode.classList.contains("active")) {
+//                 question.parentNode.classList.toggle("active")
+//             } else {
+//                 questions.forEach(question => question.parentNode.classList.remove("active"))
+//                 question.parentNode.classList.add("active")
+//             }
 
-  }))
-}) 
+//         }))
+//     })
 // OR WE CAN USE THIS CODE:
-// const faqs = document.querySelectorAll(".question")
-// faqs.forEach((question) =>
-//   question.addEventListener("click", () => {
-//     question.parentNode.classList.toggle("active");
-//   }))
+const faqs = document.querySelectorAll(".question")
+faqs.forEach((question) =>
+    question.addEventListener("click", () => {
+        question.parentNode.classList.toggle("active");
+    }))
